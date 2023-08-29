@@ -150,7 +150,7 @@ body{
         height: 100px;
         background-color: whitesmoke;
         float: left;
-        overflow-x: hidden;
+        overflow: hidden;
         /*background-color: red;*/
         position: relative;
     }
