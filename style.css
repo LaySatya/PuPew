@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-header{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    float: left;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+.container-header .container{
+    width: 90%;
+    height: 100%;
+    /*background-color: green;*/
+    margin: auto;
+}
+.container-header .container .logo{
+    width: 10%;
+    height: 90%;
+    /*b8ackground-color: bisque;*/
+    float: left;
+    margin-top: 5px;
+}
+.container-header .container .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-header .container .menu{
+    width: 55%;
+    height: 100%;
+    /*background-color: red;*/
+    float: left;
+    margin-left: 10%;
+    
+}
+.container-header .container .menu ul{
+    list-style-type: none;
+}
+.container-header .container .menu ul li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.container-header .container .menu ul li a{
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    font-size: 20px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    transform: translateY(-8px);
+    transition: 1s;
+}
+.container-header .container .menu ul li a:hover{
+    transform: scale(1.1);
+    color: red;
+}
+.container-header .container .icon{
+    width: 20%;
+    height: 100%;
+    /*background-color: red;*/
+    float: left;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container-header .container .icon .fa-solid{
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container-header .container .icon .fa-solid:hover{
+    color: red;
+    opacity: 0.8;
+}
+.container-slider{
+    width: 100%;
+    height: 650px;
+    background-color: green;
+    float: left;
+    background-image: url('slider1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    float: left;
+}
+.container-slider .fa-solid{
+    font-size: 40px;
+}
+.container-slider .fa-chevron-left{
+    transform: translateY(280px);
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+    font-size: 50px;
+}
+.container-slider .fa-chevron-left:hover{
+    color: red;
+    opacity: 0.8;
+}
+.container-slider .fa-chevron-right{
+    transform: translateY(280px);
+    margin-left: 1400px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+    font-size: 50px;
+}
+.container-slider .fa-chevron-right:hover{
+    color: red;
+    opacity: 0.8;
+}
+.container-slider .fa-regular{
+    font-size: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container-slider .fa-regular:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+.container-slider .icon-circle{
+    margin-left: 47%;
+    transform: translateY(550px);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .container-header{
+        width: 100%;
+        height: 100px;
+        background-color: whitesmoke;
+        float: left;
+        overflow-x: hidden;
+        /*background-color: red;*/
+        position: relative;
+    }
+    .container-header .container .logo{
+        width: 20%;
+    }
+    .container-header .container .menu{
+        width: 40%;
+        display: none;
+    }
+    .container-header .container .icon{
+        margin-left: 60%;
+    }
+    .container-slider{
+        height: 480px;
+    }
+    .container-slider .fa-solid{
+        font-size: 45px;
+        transform: translateY(190px);
+        margin-left: 8px;
+    }
+    .container-slider .fa-chevron-right{
+        margin-left: 450px;
+        transform: translateY(145px);
+    }
+    .container-slider .fa-regular{
+        transform: translateY(-200px);
+        margin: auto;
+        color: white;
+    }
+    .container-header .container .menu{
+        width: 30%;
+        height: 100%;
+        background-color: red;
+        float: left;
+        margin-left: 10%; 
+        z-index:auto;
+    }
+    .container-header .container .menu ul{
+        list-style-type: none;
+    }
+    .container-header .container .menu ul li{
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+}

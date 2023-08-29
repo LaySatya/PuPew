@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@700&family=Koulen&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>PuPew-Sport</title>
+</head>
+<body>
+    <section class="container-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="menu" id="menushowing">
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li>
+                        <a href="">JERSEYS</a>
+                    </li>
+                    <li>
+                        <a href="">SOCKS</a>
+                    </li>
+                    <li>
+                        <a href="">BOOKING</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-bars" id="menubar"></i>
+            </div>
+        </div>
+    </section>
+    <section class="container-slider" id="background">
+            <i class="fa-solid fa-chevron-left" id="Back"></i>
+            <i class="fa-solid fa-chevron-right" id="Next"></i>
+        <div class="icon-circle">
+            <i class="fa-regular fa-circle" id="forward1"></i>
+            <i class="fa-regular fa-circle" id="forward2"></i>
+            <i class="fa-regular fa-circle" id="forward3"></i>
+        </div>
+    </section>
+</body>
+<script>
+    const backgroundChange = document.getElementById('background');
+    const imgslider=['slider1.jpg','slider2.jpg','slider3.jpg'];
+    var a = 0;
+    setInterval(function(){
+        if ( a == 0 ){
+            backgroundChange.style.backgroundImage = "url('slider1.jpg')";
+            a = 1;
+        }
+        else if ( a == 1 ){
+            backgroundChange.style.backgroundImage = "url('slider2.jpg')";
+            a = 2;
+        }
+        else {
+            backgroundChange.style.backgroundImage = "url('slider3.jpg')";
+            a = 0;
+        }
+    }, 4000);
+
+    const Backclick = document.getElementById('Back');
+    var b = 0;
+    Backclick.addEventListener('click', () =>{
+        if ( b == 0 ){
+            backgroundChange.style.backgroundImage = "url('slider3.jpg')";
+            b = 1;
+        }
+        else if ( b == 1 ){
+            backgroundChange.style.backgroundImage = "url('slider2.jpg')";
+            b = 2;
+        }
+        else {  
+            backgroundChange.style.backgroundImage = "url('slider1.jpg')";
+            b = 0;
+        }
+    })
+    const Forwardclick = document.getElementById('Next');
+    var c = 0;
+    Forwardclick.addEventListener('click', () =>{
+        if ( c == 0 ){
+            backgroundChange.style.backgroundImage = "url('slider2.jpg')";
+            c = 1;
+        }
+        else if ( c == 1 ){
+            backgroundChange.style.backgroundImage = "url('slider3.jpg')";
+            c = 2;
+        }
+        else {  
+            backgroundChange.style.backgroundImage = "url('slider1.jpg')";
+            c = 0;
+        }
+    })
+
+    const Forwardclick1 = document.getElementById('forward1');
+        Forwardclick1.addEventListener('click', ()=>{
+            backgroundChange.style.backgroundImage = "url('slider1.jpg')";
+        })
+    const Forwardclick2 = document.getElementById('forward2');
+        Forwardclick2.addEventListener('click', ()=>{
+            backgroundChange.style.backgroundImage = "url('slider2.jpg')";
+        })
+    const Forwardclick3 = document.getElementById('forward3');
+        Forwardclick3.addEventListener('click', ()=>{
+            backgroundChange.style.backgroundImage = "url('slider3.jpg')";
+        })
+       
+    const menushow = document.getElementById('menushowing');
+    const Menuclick  = document.getElementById('menubar');
+    var c = 0;
+        Menuclick.addEventListener('click', ()=>{
+            if ( c == 0 ){
+                menushow.style.display = "block";
+                c = 1;
+            }
+            else{
+                menushow.style.diplay = "none";
+                c = 0;
+            }
+        })
+    </script>
+    
+</html>
