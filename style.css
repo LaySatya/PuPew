@@ -2,199 +2,241 @@ body{
     margin: 0;
     padding: 0;
 }
-.container-header{
+.container-full{
     width: 100%;
-    height: 100px;
+    height: 740px;
+    background-color: green;
+    overflow: hidden;
+    float: left;
+}
+.container-full .container-header{
+    width: 100%;
+    height: 90px;
     background-color: whitesmoke;
     float: left;
-    overflow: hidden;
-    /*background-color: red;*/
 }
-.container-header .container{
+.container-full .container-header .header{
     width: 90%;
     height: 100%;
-    /*background-color: green;*/
+    /*background-color: blue;*/
     margin: auto;
 }
-.container-header .container .logo{
+.container-full .container-header .header .logo{
     width: 10%;
-    height: 90%;
-    /*b8ackground-color: bisque;*/
+    height: 100%;
+    /*background-color: red;*/
     float: left;
-    margin-top: 5px;
 }
-.container-header .container .logo img{
+.container-full .container-header .header .logo img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
-.container-header .container .menu{
-    width: 55%;
+.container-full .container-header .header .menu{
+    width: 60%;
     height: 100%;
     /*background-color: red;*/
     float: left;
     margin-left: 10%;
-    
 }
-.container-header .container .menu ul{
+.container-full .container-header .header .menu .fa-xmark{
+    display: none;
+}
+.container-full .container-header .header .menu ul{
     list-style-type: none;
 }
-.container-header .container .menu ul li{
+.container-full .container-header .header .menu ul li{
     float: left;
     margin: 0;
     padding: 0;
 }
-.container-header .container .menu ul li a{
+.container-full .container-header .header .menu ul li a{
     text-decoration: none;
-    padding: 25px;
+    padding: 15px;
     display: block;
-    font-size: 20px;
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    transform: translateY(-8px);
-    transition: 1s;
+    font-size: 18px;
+    transition: 0.7s;
+    font-family: 'Ubuntu', sans-serif;
 }
-.container-header .container .menu ul li a:hover{
-    transform: scale(1.1);
+.container-full .container-header .header .menu ul li a:hover{
+    transform: scale(1.2);
     color: red;
 }
-.container-header .container .icon{
-    width: 20%;
+.container-full .container-header .header .menu ul .learn-more{
+    width: 150px;
+    height: 50px;
+    /*background-color: green;*/
+    float: left;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px grey;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+.container-full .container-header .header .menu ul .learn-more:hover{
+    transform: scale(.85);
+    transform: translateY(-15px);
+}
+.container-full .container-header .header .menu ul .learn-more p{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container-full .container-header .header .icon{
+    width: 10%;
     height: 100%;
     /*background-color: red;*/
     float: left;
-    margin-left: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.container-header .container .icon .fa-solid{
-    font-size: 25px;
-    text-align: center;
     margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.6s;
 }
-.container-header .container .icon .fa-solid:hover{
+.container-full .container-header .header .icon i{
+    font-size: 25px;
+    margin-left: 15px;
+    transition: 0.7s;
+}
+.container-full .container-header .header .icon  a .fa-user{
+    color: black;
+ }
+.container-full .container-header .header .icon i:hover{
+    transform: scale(.85);
     color: red;
-    opacity: 0.8;
 }
-.container-slider{
+.container-full .container-slider{
     width: 100%;
     height: 650px;
-    background-color: green;
+    background-color: pink;
     float: left;
-    background-image: url('slider1.jpg');
+    background-image: url('1.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.container-slider img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    float: left;
-}
-.container-slider .fa-solid{
-    font-size: 40px;
-}
-.container-slider .fa-chevron-left{
-    transform: translateY(280px);
-    margin-left: 30px;
+.container-full .container-slider .fa-solid{
+    font-size: 55px;
+    margin-top: 280px;
+    margin-left: 20px;
+    transition: 0.8s;
     cursor: pointer;
-    transition: 0.5s;
-    color: black;
-    font-size: 50px;
 }
-.container-slider .fa-chevron-left:hover{
+.container-full .container-slider .fa-solid:hover{
     color: red;
-    opacity: 0.8;
 }
-.container-slider .fa-chevron-right{
-    transform: translateY(280px);
-    margin-left: 1400px;
+.container-full .container-slider .fa-angle-right{
+    transform: translateX(1390px);
+}
+.container-full .container-slider .circle-icon{
+    width: 100px;
+    height: 40px;
+    /*background-color: green;*/
+    margin: auto;
+    transform: translateY(250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: 0.5s;
-    color: black;
-    font-size: 50px;
 }
-.container-slider .fa-chevron-right:hover{
-    color: red;
-    opacity: 0.8;
-}
-.container-slider .fa-regular{
+.container-full .container-slider .circle-icon i{
     font-size: 25px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+    margin-left:5px;
+    transition: 0.8s;
 }
-.container-slider .fa-regular:hover{
+.container-full .container-slider .circle-icon i:hover{
     background-color: red;
     border-radius: 50%;
 }
-.container-slider .icon-circle{
-    margin-left: 47%;
-    transform: translateY(550px);
-}
-
-
-
-
 
 
 
 
 @media (max-width: 575.98px) {
-    .container-header{
-        width: 100%;
-        height: 100px;
-        background-color: whitesmoke;
-        float: left;
-        overflow: hidden;
-        /*background-color: red;*/
+    .container-full{
         position: relative;
     }
-    .container-header .container .logo{
-        width: 20%;
-    }
-    .container-header .container .menu{
-        width: 40%;
-        display: none;
-    }
-    .container-header .container .icon{
-        margin-left: 60%;
-    }
-    .container-slider{
-        height: 480px;
-    }
-    .container-slider .fa-solid{
-        font-size: 45px;
-        transform: translateY(190px);
-        margin-left: 8px;
-    }
-    .container-slider .fa-chevron-right{
-        margin-left: 450px;
-        transform: translateY(145px);
-    }
-    .container-slider .fa-regular{
-        transform: translateY(-200px);
-        margin: auto;
-        color: white;
-    }
-    .container-header .container .menu{
-        width: 30%;
+    .container-full .container-header .header .logo{
         height: 100%;
-        background-color: red;
-        float: left;
-        margin-left: 10%; 
-        z-index:auto;
+        width: 25%;
+        transform: translateX(170px);
     }
-    .container-header .container .menu ul{
-        list-style-type: none;
+    
+    .container-full .container-header .header .menu{
+        height: 500px;
+        background-color: whitesmoke;
+        margin-top: 90px;
+        transform: translateX(-200px);
+        box-shadow: 0px 0px 1px 1px grey;
+        display: none;
+        z-index: 999;
     }
-    .container-header .container .menu ul li{
+    .container-full .container-header .header .menu .fa-xmark{
+        display: block;
+        margin-left: 205px;
+        transform: translateY(-35px);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .container-full .container-header .header .menu ul{
+        margin-top: 50px;
+    }
+    .container-full .container-header .header .menu ul li{
         float: none;
-        margin: 0;
-        padding: 0;
+        margin-top: 7px;
+    }
+    .container-full .container-header .header .menu ul li a:hover{
+        transform: scale(1.2);
+        
+    }
+    .container-full .container-header .header .menu ul .learn-more{
+        width: 130px;
+        height: 40px;
+        margin-left: 3px;
+    }
+    .container-full .container-header .header .icon{
+        transform: translateX(-140px);
+    }
+    .container-full .container-header .header .icon  a .fa-user{
+       transform: translateX(405px);
+       color: black;
+       transition: 0.7;
+    }
+    .container-full .container-header .header .icon  a .fa-user:hover{
+        transform: scale(.85);
+        transform: translateX(405px);
+        color: red;
+    }
+    .container-full .container-header .header .icon  .fa-cart-shopping{
+        transform: translateX(325px);
+        transition: 0.6s;
+    }
+    .container-full .container-header .header .icon  .fa-cart-shopping:hover{
+        transform: scale(.85);
+        color: red;
+        transform: translateX(325px);
+       
+    }
+    .container-full .container-slider .fa-angle-left{
+        transform: translateY(-150px);
+        font-size: 40px;
+    }
+    .container-full .container-slider .fa-angle-right{
+        margin-left: 420px;
+        transform: translateY(-150px);
+        font-size: 40px;
+    }
+    .container-full .container-slider .circle-icon{
+        transform: translateY(-55px);
+        color:red;
+    }
+    .container-full .container-slider .circle-icon .fa-circle{
+        font-size: 20px;
+    }
+    .container-full .container-slider{
+        background-size: 100%;
     }
 }
